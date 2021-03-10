@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="success" class="ion-text-center">
+
+    <ion-title>
+Menu Category
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+
+<ion-grid>
+    <ion-row>
+        <ion-col>
+            <img src="assets/cendawan.jpg" />
+            <ion-button expand="full" shape="round" color="success" [routerLink]="['/nasi']"><b>Hidangan Nasi</b></ion-button>
+        </ion-col>
+
+
+        <ion-col>
+            <img src="assets/gorengayam.jfif"/>
+            <ion-button expand="full" shape="round" color="success" [routerLink]="['/goreng']"><b>Hidangan Nasi Goreng</b></ion-button>
+        </ion-col>
+
+        <ion-col>
+          <img src="assets/teho.jfif"/>
+          <ion-button expand="full" shape="round" color="success" [routerLink]="['/minum']"><b>Minuman</b></ion-button>
+      </ion-col>
+
+
+
+    </ion-row>
+</ion-grid>
+
+<ion-button expand="full" shape="round" color="success" [routerLink]="['/message']"><b>Take Order</b></ion-button>
+
+</ion-content>

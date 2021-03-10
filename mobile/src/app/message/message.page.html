@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="success" class="ion-text-center">
+
+    <ion-title>
+Make Order
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<h1 class="ion-text-center"></h1>
+<div class="ion-padding">
+
+  <ion-item>
+  <ion-label position="floating">Name</ion-label>
+  <ion-input type="text" [(ngModel)]="post.name" required></ion-input>
+  </ion-item>
+  
+
+
+  <ion-item>
+    <ion-label position="floating">Message</ion-label>
+    <ion-input textarea [(ngModel)]="post.message" required></ion-input>
+</ion-item>
+
+<ion-button expand="block" color="success" expand="block" (click)="createPost(post)" >
+  <ion-icon name="caret-forward-outline"></ion-icon>
+
+Send
+</ion-button>
+
+
+</div>
+  <ion-button expand="block" color="success" expand="block"  routerLink="/home" >back</ion-button>
+</ion-content>
